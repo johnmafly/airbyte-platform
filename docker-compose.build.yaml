@@ -58,7 +58,7 @@ services:
       labels:
         io.airbyte.git-revision: ${GIT_REVISION}
   temporal:
-    image: airbyte/temporal:${VERSION}
+    image: airbyte/temporal:${VERSION}-relax-grpc
     build:
       dockerfile: Dockerfile
       context: airbyte-temporal
